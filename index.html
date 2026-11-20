@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ES-500 | 1 kWh All-in-One Solar Power Station — 500W Pure Sine, Plug &amp; Play</title>
+<meta name="description" content="1 kWh LiFePO4 all-in-one solar power station with 500 W AC output and a built-in solar charger. No wiring, no fuel, no noise. Sample orders from USD 147 EXW China.">
+<meta property="og:title" content="ES-500 — Power that stays on when the grid doesn't">
+<meta property="og:description" content="1 kWh LiFePO4 all-in-one. 500 W AC output at 230 V. Just add a solar panel. Sample from USD 147 EXW.">
+<meta property="og:image" content="assets/03-stall-night-web.jpg">
+<meta property="og:type" content="website">
+<style>
+  :root{
+    --ink:#10151b;
+    --ink-2:#1a222c;
+    --ink-3:#2a3542;
+    --paper:#ffffff;
+    --paper-2:#f6f7f5;
+    --paper-3:#eceee9;
+    --text:#1b2430;
+    --muted:#5d6b7a;
+    --line:#dfe3dc;
+    --sun:#e8951c;
+    --sun-l:#ffb648;
+    --green:#1f7a54;
+    --green-l:#2fa36b;
+    --radius:14px;
+    --maxw:1120px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+    color:var(--text);background:var(--paper);line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+  .eyebrow{
+    font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+    font-weight:700;color:var(--sun);
+  }
+  h1,h2,h3{line-height:1.18;letter-spacing:-.02em;font-weight:800}
+  h2{font-size:clamp(26px,4vw,38px);margin-bottom:14px}
+  h3{font-size:18px;margin-bottom:8px}
+  .lead{font-size:clamp(16px,2.2vw,19px);color:var(--muted);max-width:62ch}
+
+  /* ---------- top bar ---------- */
+  .topbar{
+    position:sticky;top:0;z-index:50;
+    background:rgba(16,21,27,.92);backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+  }
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+  .brand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:800;letter-spacing:-.01em}
+  .brand .dot{width:9px;height:9px;border-radius:50%;background:var(--sun-l);box-shadow:0 0 12px var(--sun-l)}
+  .brand small{font-weight:500;color:rgba(255,255,255,.55);font-size:12px;letter-spacing:.04em}
+  .nav-cta{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--sun);color:#1a1206;font-weight:700;font-size:14px;
+    padding:9px 16px;border-radius:999px;white-space:nowrap;
+  }
+  .nav-cta:hover{background:var(--sun-l)}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;background:var(--ink);color:#fff;overflow:hidden}
+  .hero-bg{position:absolute;inset:0}
+  .hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 62%;opacity:.55}
+  .hero-bg::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(16,21,27,.55) 0%,rgba(16,21,27,.72) 45%,rgba(16,21,27,.96) 100%);
+  }
+  .hero-inner{position:relative;padding:clamp(56px,9vw,110px) 0 clamp(48px,7vw,84px)}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+  .hero h1{font-size:clamp(34px,5.6vw,60px);margin:16px 0 18px;max-width:15ch}
+  .hero h1 em{font-style:normal;color:var(--sun-l)}
+  .hero p.sub{font-size:clamp(16px,2.2vw,19px);color:rgba(255,255,255,.76);max-width:52ch}
+  .hero-stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+  .stat{
+    background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);
+    border-radius:10px;padding:10px 14px;
+  }
+  .stat b{display:block;font-size:19px;color:#fff;letter-spacing:-.01em}
+  .stat span{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55);font-weight:600}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:9px;
+    padding:14px 26px;border-radius:999px;font-weight:700;font-size:15px;
+    transition:transform .15s ease, background .15s ease;border:1px solid transparent;
+  }
+  .btn:active{transform:scale(.98)}
+  .btn-primary{background:var(--sun);color:#1a1206}
+  .btn-primary:hover{background:var(--sun-l)}
+  .btn-ghost{border-color:rgba(255,255,255,.3);color:#fff}
+  .btn-ghost:hover{background:rgba(255,255,255,.1)}
+  .price-tag{margin-top:24px;font-size:14px;color:rgba(255,255,255,.62)}
+  .price-tag b{color:#fff;font-size:22px;letter-spacing:-.01em}
+
+  .hero-card{
+    background:rgba(255,255,255,.96);border-radius:18px;padding:14px;
+    box-shadow:0 24px 60px rgba(0,0,0,.45);
+  }
+  .hero-card img{border-radius:12px;width:100%}
+  .hero-card .cap{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:12px 6px 4px;font-size:13px;color:var(--muted);
+  }
+  .hero-card .cap b{color:var(--text);font-size:14px}
+
+  /* ---------- section shell ---------- */
+  section{padding:clamp(52px,7vw,88px) 0}
+  .sec-head{margin-bottom:34px;max-width:70ch}
+  .bg-2{background:var(--paper-2)}
+  .bg-dark{background:var(--ink);color:#fff}
+  .bg-dark .lead{color:rgba(255,255,255,.66)}
+  .bg-dark h2{color:#fff}
+
+  /* ---------- calculator ---------- */
+  .calc{
+    display:grid;grid-template-columns:1.25fr .75fr;gap:28px;
+    background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(20px,3vw,32px);
+    box-shadow:0 2px 12px rgba(16,21,27,.04);
+  }
+  .loads{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .load{
+    display:flex;align-items:center;gap:10px;padding:10px 12px;
+    border:1px solid var(--line);border-radius:10px;cursor:pointer;
+    background:var(--paper);transition:all .13s ease;user-select:none;
+  }
+  .load:hover{border-color:#c3cbc0}
+  .load input{accent-color:var(--green);width:17px;height:17px;flex:0 0 auto;cursor:pointer}
+  .load .nm{font-size:14px;font-weight:600;line-height:1.25}
+  .load .w{font-size:11px;color:var(--muted);font-weight:600;letter-spacing:.02em}
+  .load:has(input:checked){background:#eef7f1;border-color:var(--green-l)}
+  .calc-out{
+    background:var(--ink-2);color:#fff;border-radius:12px;padding:22px;
+    display:flex;flex-direction:column;justify-content:center;
+  }
+  .calc-out .lbl{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5);font-weight:700}
+  .calc-out .big{font-size:clamp(30px,5vw,42px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin:4px 0 2px;color:var(--sun-l)}
+  .calc-out .sub{font-size:13px;color:rgba(255,255,255,.6)}
+  .calc-out hr{border:0;border-top:1px solid rgba(255,255,255,.12);margin:16px 0}
+  .calc-out .row{display:flex;justify-content:space-between;font-size:13px;padding:3px 0;color:rgba(255,255,255,.75)}
+  .calc-out .row b{color:#fff}
+  .warn{
+    margin-top:12px;font-size:12.5px;line-height:1.45;padding:9px 11px;border-radius:8px;
+    background:rgba(232,149,28,.16);color:#ffcb7a;border:1px solid rgba(232,149,28,.3);display:none;
+  }
+  .warn.on{display:block}
+  .calc-note{font-size:12.5px;color:var(--muted);margin-top:16px;line-height:1.55}
+
+  /* ---------- specs ---------- */
+  .specs{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+  .spec{background:var(--paper);padding:20px}
+  .spec dt{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:5px}
+  .spec dd{font-size:15.5px;font-weight:700;letter-spacing:-.01em}
+
+  /* ---------- gallery ---------- */
+  .gal{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .gal figure{position:relative;border-radius:var(--radius);overflow:hidden;background:var(--paper-3)}
+  .gal img{width:100%;aspect-ratio:2/3;object-fit:cover;transition:transform .5s ease}
+  .gal figure:hover img{transform:scale(1.03)}
+  .gal figcaption{
+    position:absolute;left:0;right:0;bottom:0;padding:38px 16px 14px;
+    background:linear-gradient(transparent,rgba(8,12,16,.88));
+    color:#fff;font-size:13.5px;font-weight:600;line-height:1.35;
+  }
+  .gal figcaption span{display:block;font-size:11px;font-weight:500;color:rgba(255,255,255,.62);margin-top:3px}
+
+  /* ---------- video ---------- */
+  .video-shell{display:grid;grid-template-columns:.62fr 1fr;gap:40px;align-items:center}
+  video{width:100%;border-radius:var(--radius);background:#000;box-shadow:0 18px 44px rgba(0,0,0,.34)}
+  .vid-list{list-style:none;margin-top:22px}
+  .vid-list li{
+    display:flex;gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.1);
+    font-size:14.5px;color:rgba(255,255,255,.78);
+  }
+  .vid-list li:last-child{border-bottom:0}
+  .vid-list .n{
+    flex:0 0 auto;width:22px;height:22px;border-radius:50%;
+    background:var(--sun);color:#1a1206;font-size:12px;font-weight:800;
+    display:grid;place-items:center;margin-top:2px;
+  }
+
+  /* ---------- who ---------- */
+  .who{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .who-card{border:1px solid var(--line);border-radius:var(--radius);padding:22px;background:var(--paper)}
+  .who-card .ic{font-size:24px;margin-bottom:10px}
+  .who-card h3{font-size:15.5px}
+  .who-card p{font-size:13.5px;color:var(--muted);line-height:1.5}
+
+  /* ---------- sample ---------- */
+  .sample{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+  .tiers{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+  .tier{display:flex;justify-content:space-between;align-items:baseline;padding:16px 20px;border-bottom:1px solid var(--line);background:var(--paper)}
+  .tier:last-child{border-bottom:0}
+  .tier .nm{font-size:14.5px;font-weight:700}
+  .tier .nm span{display:block;font-size:12px;font-weight:500;color:var(--muted);margin-top:2px}
+  .tier .pr{font-size:16px;font-weight:800;white-space:nowrap;letter-spacing:-.01em}
+  .tier.hi{background:#fffaf0}
+
+  /* ---------- contact ---------- */
+  .contact{background:var(--ink);color:#fff;text-align:center}
+  .contact h2{max-width:22ch;margin:14px auto 18px;font-size:clamp(28px,4.6vw,44px)}
+  .contact p{color:rgba(255,255,255,.68);max-width:52ch;margin:0 auto 32px;font-size:16px}
+  .contact-btns{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
+  .btn-wa{background:#25d366;color:#06301a}
+  .btn-wa:hover{background:#3ae57d}
+  .foot{padding:28px 0;border-top:1px solid rgba(255,255,255,.1);margin-top:56px;font-size:12.5px;color:rgba(255,255,255,.42);text-align:center;line-height:1.7}
+
+  /* ---------- responsive ---------- */
+  @media(max-width:900px){
+    .hero-grid{grid-template-columns:1fr;gap:32px}
+    .hero-card{order:-1;max-width:340px;margin:0 auto}
+    .calc{grid-template-columns:1fr}
+    .specs{grid-template-columns:1fr 1fr}
+    .video-shell{grid-template-columns:1fr;gap:26px}
+    .sample{grid-template-columns:1fr;gap:28px}
+    .who{grid-template-columns:1fr 1fr}
+    .gal{grid-template-columns:1fr 1fr}
+    .gal figure:nth-child(3){grid-column:1/-1}
+    .gal figure:nth-child(3) img{aspect-ratio:16/10}
+  }
+  @media(max-width:560px){
+    .loads{grid-template-columns:1fr}
+    .specs{grid-template-columns:1fr}
+    .gal{grid-template-columns:1fr}
+    .gal figure:nth-child(3){grid-column:auto}
+    .gal img,.gal figure:nth-child(3) img{aspect-ratio:4/3}
+    .who{grid-template-columns:1fr}
+    .btn{width:100%}
+    .hero-actions{flex-direction:column}
+    .hero-card{max-width:280px}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span>IPV SOLAR <small>ES-500</small></div>
+    <a class="nav-cta" href="#contact">Get a quote</a>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="hero-bg"><img src="assets/01-family-web.jpg" alt="Family using the ES-500 during a typhoon power outage"></div>
+  <div class="hero-inner">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow" style="color:var(--sun-l)">All-in-one · 1 kWh · LiFePO4</div>
+        <h1>Power that stays on when the <em>grid doesn't</em>.</h1>
+        <p class="sub">One box. A solar panel. Nothing else. The ES-500 puts a 1 kWh LiFePO4 battery, a 500 W pure sine output and a built-in solar charger into one case you can carry with one hand.</p>
+        <div class="hero-stats">
+          <div class="stat"><b>1 kWh</b><span>LiFePO4</span></div>
+          <div class="stat"><b>500 W</b><span>Pure sine</span></div>
+          <div class="stat"><b>6000</b><span>Cycles</span></div>
+          <div class="stat"><b>2–3 h</b><span>Mains recharge</span></div>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Request a sample</a>
+          <a class="btn btn-ghost" href="#calc">What can it run?</a>
+        </div>
+        <p class="price-tag">Sample price from <b>USD 147</b> / unit · EXW China · distributor terms on request</p>
+      </div>
+      <div class="hero-card">
+        <img src="assets/product-web.jpg" alt="ES-500 all-in-one solar power station">
+        <div class="cap"><b>ES-500</b><span>Carton 312 × 220 × 407 mm · 11.2 kg</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ CALCULATOR ============ -->
+<section id="calc" class="bg-2">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Load calculator</div>
+      <h2>Pick what you need to run. See how long it lasts.</h2>
+      <p class="lead">A 1 kWh battery is plenty for lights, fans, a TV and phones all night. It is not a whole-house system. Tick your appliances and we will show you the honest number.</p>
+    </div>
+
+    <div class="calc">
+      <div>
+        <div class="loads" id="loads"></div>
+        <p class="calc-note">Run-times assume 85% usable capacity (854 Wh) and a steady load. Motors — fridge, pump — draw roughly 2–3× their rated power for a second or two on start-up, so run one motor at a time rather than starting several with everything else switched on. Recharge assumes a panel in good sun; the solar input accepts 11–55 V and up to 300 W.</p>
+      </div>
+      <div class="calc-out">
+        <div class="lbl">Estimated back-up time</div>
+        <div class="big" id="rt">— h</div>
+        <div class="sub" id="rtSub">Select appliances to begin</div>
+        <hr>
+        <div class="row"><span>Continuous load</span><b id="totW">0 W</b></div>
+        <div class="row"><span>Usable energy</span><b>854 Wh</b></div>
+        <div class="row"><span>Headroom on 500W</span><b id="head">500 W</b></div>
+        <div class="warn" id="warn">This combination exceeds the 500W continuous rating. The ES-500 will shut down on overload — split the load, or step up to a parallel unit.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPECS ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Specification</div>
+      <h2>Built as one unit, not three boxes bolted together.</h2>
+      <p class="lead">Inverter, solar charger and battery management are designed as one unit, so there is no mismatch between the panel, the charger and the battery. Fewer failure points, simpler installation, one warranty.</p>
+    </div>
+    <dl class="specs">
+      <div class="spec"><dt>Battery</dt><dd>1004.8 Wh LiFePO4 (3.2 V / 314 Ah)</dd></div>
+      <div class="spec"><dt>Cells</dt><dd>REPT · HiTHIUM · Great Power</dd></div>
+      <div class="spec"><dt>AC output</dt><dd>500 W · pure sine wave</dd></div>
+      <div class="spec"><dt>AC voltage</dt><dd>230 V / 50 Hz · 220 V / 60 Hz for PH</dd></div>
+      <div class="spec"><dt>Solar input</dt><dd>11–55 Vdc · up to 300 W</dd></div>
+      <div class="spec"><dt>Solar input current</dt><dd>10 A max</dd></div>
+      <div class="spec"><dt>Mains recharge</dt><dd>2–3 hours</dd></div>
+      <div class="spec"><dt>Cycle life</dt><dd>6000 cycles (≈10 years)</dd></div>
+      <div class="spec"><dt>Charging</dt><dd>Solar + AC mains, simultaneously</dd></div>
+      <div class="spec"><dt>Carton</dt><dd>312 × 220 × 407 mm · 11.2 kg</dd></div>
+      <div class="spec"><dt>Warranty</dt><dd>24 months</dd></div>
+      <div class="spec"><dt>Lead time</dt><dd>25–30 days</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="bg-2">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Where it works</div>
+      <h2>Three situations your customers already know.</h2>
+    </div>
+    <div class="gal">
+      <figure>
+        <img src="assets/03-stall-night-web.jpg" alt="Roadside food stall trading through a blackout with the ES-500">
+        <figcaption>Blackout on the street. The stall keeps trading.<span>Lights, fan, phone charging — one unit</span></figcaption>
+      </figure>
+      <figure>
+        <img src="assets/01-family-web.jpg" alt="Family at home during a typhoon power cut">
+        <figcaption>Typhoon night. Homework still gets done.<span>Nobody notices the grid went down</span></figcaption>
+      </figure>
+      <figure>
+        <img src="assets/02-shop-day-web.jpg" alt="Sari-sari store charging the ES-500 from a folding solar panel">
+        <figcaption>Daytime recharge, zero fuel cost.<span>Folding panel in, cable on, done</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VIDEO ============ -->
+<section class="bg-dark">
+  <div class="wrap video-shell">
+    <div>
+      <video controls playsinline preload="metadata" poster="assets/01-family-night.jpg">
+        <source src="assets/demo.mp4" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+    </div>
+    <div>
+      <div class="eyebrow">See it running</div>
+      <h2 style="margin-top:12px">No sound. That is the point.</h2>
+      <p class="lead">A diesel set announces itself from three houses away. The ES-500 makes no noise, no smoke and no smell — which is why it can sit on a shop counter or in a bedroom.</p>
+      <ul class="vid-list">
+        <li><span class="n">1</span><span>Plug a solar panel into the PV input (11–55 V, up to 300 W). No electrician, no permit, no wiring into the wall.</span></li>
+        <li><span class="n">2</span><span>Plug appliances straight into the AC outlets on the front.</span></li>
+        <li><span class="n">3</span><span>Connect mains as well if you have it — the unit charges from both at the same time.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHO ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Channel</div>
+      <h2>Who moves this product.</h2>
+      <p class="lead">We supply the unit. You supply the last mile — installation, warranty handling and the relationship with the household.</p>
+    </div>
+    <div class="who">
+      <div class="who-card">
+        <div class="ic">🏪</div>
+        <h3>Appliance &amp; hardware retailers</h3>
+        <p>Sits next to fans and TVs. Demonstrates itself — put a bulb and a fan on it in the shop.</p>
+      </div>
+      <div class="who-card">
+        <div class="ic">🔧</div>
+        <h3>Solar installers</h3>
+        <p>An entry-level product for customers who cannot afford a rooftop system yet. Add a panel and go.</p>
+      </div>
+      <div class="who-card">
+        <div class="ic">📦</div>
+        <h3>Distributors</h3>
+        <p>Carton and pallet pricing, OEM branding, your language on the manual and the box.</p>
+      </div>
+      <div class="who-card">
+        <div class="ic">🏝️</div>
+        <h3>Off-grid &amp; island projects</h3>
+        <p>Clinics, schools, barangay halls, fishing boats. Quiet matters where people sleep nearby.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SAMPLE ============ -->
+<section class="bg-2">
+  <div class="wrap sample">
+    <div>
+      <div class="eyebrow">Commercial</div>
+      <h2>Start with one unit.</h2>
+      <p class="lead" style="margin-bottom:18px">Test it yourself before you commit to a container. Sample orders ship from stock, and the sample price is deducted from your first bulk order.</p>
+      <div class="tiers">
+        <div class="tier hi">
+          <div class="nm">Sample · 1 unit<span>For testing and demonstration</span></div>
+          <div class="pr">USD 147</div>
+        </div>
+        <div class="tier">
+          <div class="nm">Trial · 20–99 units<span>Carton price</span></div>
+          <div class="pr">On request</div>
+        </div>
+        <div class="tier">
+          <div class="nm">Distributor · 100+ units<span>Pallet / container · OEM available</span></div>
+          <div class="pr">On request</div>
+        </div>
+      </div>
+      <p class="calc-note">All prices EXW China, excluding freight, duties and local taxes. The solar panel is not included — the ES-500 accepts a 11–55 V panel up to 300 W. The full spec sheet and the current certification list are available on request. Available in 230 V / 50 Hz as standard and in 220 V / 60 Hz for the Philippines.</p>
+    </div>
+    <div>
+      <img src="assets/03-stall-night.jpg" alt="ES-500 in use at a night market stall" style="border-radius:var(--radius)">
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--sun-l)">Talk to us</div>
+    <h2>Tell us what your customers need to run.</h2>
+    <p>Send us the appliances and the country, and we will tell you honestly whether the ES-500 fits — or whether you need something bigger. Reply within one working day.</p>
+    <div class="contact-btns">
+      <a class="btn btn-wa" href="https://wa.me/8613424590746?text=Hi%2C%20I%20saw%20the%20ES-500%20page.%20I%20am%20interested%20in%20a%20sample." target="_blank" rel="noopener">WhatsApp us</a>
+      <a class="btn btn-primary" href="mailto:hardy@ipvsolar.com?subject=ES-500%20sample%20enquiry">hardy@ipvsolar.com</a>
+    </div>
+    <div class="foot">
+      IPV SOLAR · Guangdong, China · www.ipvsolar.com<br>
+      ES-500 1 kWh all-in-one solar power station. Specifications subject to change without notice.
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  var LOADS = [
+    {id:'led',   n:'LED bulbs ×4',      w:36,  ic:'💡'},
+    {id:'fan',   n:'Stand fan',         w:45,  ic:'🌀'},
+    {id:'cfan',  n:'Ceiling fan',       w:70,  ic:'🌀'},
+    {id:'tv',    n:'32" LED TV',        w:50,  ic:'📺'},
+    {id:'phone', n:'Phones ×3',         w:30,  ic:'📱'},
+    {id:'wifi',  n:'WiFi router',       w:10,  ic:'📶'},
+    {id:'laptop',n:'Laptop',            w:60,  ic:'💻'},
+    {id:'spk',   n:'Karaoke speaker',   w:60,  ic:'🔊'},
+    {id:'rice',  n:'Rice cooker',       w:400, ic:'🍚'},
+    {id:'fridge',n:'Small fridge 100 L',w:80,  ic:'🧊', surge:3},
+    {id:'pump',  n:'Water pump 0.5 HP', w:370, ic:'🚿', surge:3},
+    {id:'blend', n:'Blender',           w:300, ic:'🥤'}
+  ];
+  var USABLE = 854, RATED = 500;
+
+  var box = document.getElementById('loads');
+  LOADS.forEach(function(l){
+    var lab = document.createElement('label');
+    lab.className = 'load';
+    lab.innerHTML = '<input type="checkbox" data-w="'+l.w+'" data-surge="'+(l.surge||1)+'" id="c-'+l.id+'">'+
+      '<span><span class="nm">'+l.ic+' '+l.n+'</span><span class="w">'+l.w+' W</span></span>';
+    box.appendChild(lab);
+  });
+
+  var rt=document.getElementById('rt'), rtSub=document.getElementById('rtSub'),
+      totW=document.getElementById('totW'), head=document.getElementById('head'),
+      warn=document.getElementById('warn');
+
+  function fmt(h){
+    if(h>=1) return h.toFixed(1)+' h';
+    return Math.round(h*60)+' min';
+  }
+
+  function update(){
+    var total=0, n=0;
+    box.querySelectorAll('input:checked').forEach(function(cb){
+      total += +cb.dataset.w; n++;
+    });
+    totW.textContent = total + ' W';
+
+    if(n===0){
+      rt.textContent='— h'; rtSub.textContent='Select appliances to begin';
+      head.textContent = RATED + ' W'; head.style.color='#fff';
+      warn.classList.remove('on'); return;
+    }
+
+    var hours = USABLE/total;
+    rt.textContent = fmt(hours);
+    rtSub.textContent = n+' appliance'+(n>1?'s':'')+' · '+total+' W average';
+
+    // headroom
+    var room = RATED-total;
+    head.textContent = (room>=0? room : 0) + ' W';
+    head.style.color = room>=0 ? '#7ee0a8' : '#ff9a7a';
+
+    // surge check: worst case = total load + extra draw from the single biggest motor
+    var biggestExtra = 0;
+    box.querySelectorAll('input:checked').forEach(function(cb){
+      var w=+cb.dataset.w, s=+cb.dataset.surge;
+      var extra = w*s - w;
+      if(extra>biggestExtra) biggestExtra=extra;
+    });
+    var peakTotal = total + biggestExtra;
+
+    if(total > RATED){
+      warn.classList.add('on');
+      warn.textContent = 'Continuous load is ' + total + ' W — above the 500 W rating. Untick something, or run the heavy appliance on its own.';
+    } else if(biggestExtra > 0 && total > RATED - 150){
+      warn.classList.add('on');
+      warn.textContent = 'One of these draws a motor start-up current — roughly 2–3× its rated power for a second. At ' + total + ' W steady you are close to the limit, so run that motor on its own rather than with everything else switched on.';
+    } else {
+      warn.classList.remove('on');
+    }
+  }
+
+  box.addEventListener('change', update);
+  // sensible default: a typical evening
+  ['c-led','c-fan','c-tv','c-phone','c-wifi'].forEach(function(id){
+    var el=document.getElementById(id); if(el) el.checked=true;
+  });
+  update();
+})();
+</script>
+</body>
+</html>
